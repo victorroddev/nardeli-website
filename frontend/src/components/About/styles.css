@@ -1,0 +1,40 @@
+/* Contenedor principal de la sección About Us */
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem; /* Ejemplo de padding */
+    position:relative;
+    overflow: hidden;
+}
+
+/* Contenedor de la imagen y los degradados */
+.about-us-items-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Un ancho máximo de ejemplo */
+    margin-bottom: 2rem;
+    overflow: hidden; /* ¡MUY IMPORTANTE! para que los degradados no se salgan */
+}
+
+.about-us-img {
+    width: 100%;    border-top-left-radius: 3rem;
+}
+
+
+.about-us-paragraph {
+    max-width: 750px; /* Un ancho máximo de ejemplo */
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white;
+}
+
+.welcome-text{
+    font-family: 'SIFONN';
+    font-size: 3.2rem;
+    z-index: 20;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}

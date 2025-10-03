@@ -1,0 +1,66 @@
+:root{
+    --color-purple: rgb(74, 23, 87);
+    --color-purple-light: rgb(165, 143, 196);
+    --color-gold: rgb(199, 164, 76);
+    --color-gold-light: rgb(255, 227, 166);
+}
+
+.body{
+background-color: black;
+}
+
+html {
+  font-size: 17px;
+}
+
+/* fonts */
+@font-face {
+  font-family: 'noto-sans';
+  src: url('./assets/fonts/NotoSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: 'noto-sans';
+  src: url('./assets/fonts/NotoSans-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'codec-cold';
+  src: url('./assets/fonts/Codec-Cold-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SIFONN';
+  src: url('./assets/fonts/SIFONN_PRO.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'italiano';
+  src: url('./assets/fonts/Italianno-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Tablets y pantallas medianas */
+@media (min-width: 768px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 24px;
+  }
+}

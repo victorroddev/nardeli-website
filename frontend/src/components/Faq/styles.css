@@ -1,0 +1,89 @@
+/* --- Contenedor Principal de FAQ --- */
+.faq-container {
+    background-color: white; /* Fondo negro como en tu body */
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-title {
+    font-family: 'SIFONN', sans-serif; /* Usando tu fuente para títulos */
+    font-size: 2.5rem;
+    color: var(--color-purple); /* Usando tu variable de color */
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.faq-accordion {
+    width: 100%;
+    max-width: 800px;
+}
+
+.faq-item {
+    border-bottom: 2px solid rgba(199, 164, 76, 0.3); /* Borde con tu color dorado */
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'SIFONN', sans-serif; /* Fuente llamativa para las preguntas */
+    font-size: 1.2rem;
+    color: var(--color-purple-light);
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: var(--color-purple);
+}
+
+/* --- Contenedor de la Respuesta (para la animación) --- */
+.faq-answer-container {
+    height: 0; /* Estado inicial: cerrado */
+    opacity: 0; /* Estado inicial: invisible */
+    overflow: hidden; /* ¡CRÍTICO! Oculta el contenido cuando está cerrado */
+}
+
+.faq-answer-container p {
+    font-family: 'noto-sans', sans-serif; /* Fuente legible para las respuestas */
+    font-size: 1rem;
+    color: var(--color-purple-light);
+    line-height: 1.6;
+    margin: 0; /* Reseteamos el margen del párrafo */
+}
+
+/* --- Icono de "+" que se transforma en "x" --- */
+.faq-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.4s ease;
+}
+
+.faq-icon span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-gold);
+    transform: translate(-50%, -50%);
+    transition: transform 0.4s ease;
+}
+
+/* La segunda barra del "+" se crea rotando la primera */
+.faq-icon span:last-child {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* Cuando está abierto, el ícono rota para formar una "x" */
+.faq-icon.open {
+    transform: rotate(135deg);
+}

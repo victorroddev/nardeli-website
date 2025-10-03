@@ -1,0 +1,101 @@
+/* --- Estructura Principal del Footer --- */
+.site-footer {
+    background-color: #000; /* Fondo negro para un final impactante */
+    color: var(--color-purple-light);
+    font-family: 'noto-sans', sans-serif;
+    padding: 3rem 2rem 1.5rem 2rem;
+    border-top: 3px solid var(--color-gold); /* Una línea dorada para separar */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Para que se adapte en móviles */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+/* --- Marcadores de Logo --- */
+.footer-logos {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.logo-footer{
+    width: 100px;
+}
+
+
+/* --- Iconos de Redes Sociales --- */
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social a {
+    color: #ffff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--color-purple-light);
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+    background-color: var(--color-gold);
+    color: var(--color-purple);
+    border-color: var(--color-gold);
+}
+
+/* --- Contacto (Teléfono) --- */
+.footer-contact a {
+    color: #fff;
+    font-family: 'SIFONN', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: var(--color-gold-light);
+}
+
+/* --- Barra Inferior (Copyright) --- */
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.footer-bottom p {
+    margin: 0.5rem 0;
+}
+
+.footer-bottom a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-bottom a:hover {
+    color: var(--color-gold-light);
+}
+
+/* --- Responsividad --- */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

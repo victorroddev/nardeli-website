@@ -1,0 +1,128 @@
+
+.hero{
+    margin-top: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.hero-form{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto ;
+    background-image: url(../../img/photo/hero-img-01.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.top-degrade{
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(to bottom, black, transparent);
+    align-self: flex-start;
+}
+
+.bottom-degrade{
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(to top, black, transparent);
+    align-self: flex-end;
+}
+
+.left-degrade{
+    width: 30%;
+    height: 100%;
+    background-image: linear-gradient(to right, black, transparent);
+    position: absolute;
+}
+
+.right-degrade{
+    width:30%;
+    height: 100%;
+    background-image: linear-gradient(to left, black, transparent);
+    position: absolute;
+    right: 0;
+}
+
+
+.hero-text{
+    color: white;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.text-1, .text-2{
+    font-family: 'SIFONN';
+    font-size: 3rem;
+    z-index: 20;
+    font-weight: bold;
+}
+
+
+.text-1,
+.text-2,
+.random-text
+{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.opacity-layer{
+    position: absolute;
+    background-color: black;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+    
+}
+
+.curtain{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 50;
+    top: 0;
+    overflow: hidden;
+}
+
+.text-container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+}
+
+.logo-letters{
+    z-index: 20;
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+
+.random-text{
+    z-index: 20;
+    font-family: 'italiano';
+    font-size: 6rem;
+    color: var(--color-gold-light);
+}
+
+.hero-arrow{
+    width: 2rem;
+    z-index: 40;
+}
+
+
+@media(min-width: 768px){
+    .hero-form{
+    height: 800px;
+}
+}

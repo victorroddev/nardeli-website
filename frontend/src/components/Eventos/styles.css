@@ -1,0 +1,101 @@
+.eventos-container{
+    overflow: hidden;
+}
+
+.panels-container{
+    width: 300%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.panel {
+    /* Cada panel ocupa el 100% del ancho y alto del viewport. */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    box-sizing: border-box; /* Para que el padding no afecte el tamaño total */
+    overflow: hidden;
+    
+}
+
+.panels-text{
+    color: white;
+}
+
+.bodas-title{
+    color: white;
+}
+
+.panel-1{
+    background-color: black;
+}
+
+.panel-2{
+    background-color: var(--color-gold);
+}
+
+.panel-3{
+    background-color: var(--color-gold-light);
+}
+
+.panel-4{
+    background-color: var(--color-gold);
+}
+.eventos-titles{
+    font-family: 'italiano';
+    font-size: 6rem;
+}
+
+.portrait-title{
+    text-align: center;
+    color: white;
+}
+
+.frame-container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 600px;
+    height: 70%;
+    max-height: 500px;
+    position: relative;
+}
+
+.frame-panel-2{
+    width: 90%;
+    height: 75%;
+    border: solid 5px white;
+    border-top-left-radius: 4rem;
+    position: absolute;
+}
+
+.panel-image {
+    position: absolute;
+    width: 80%;
+    /*Ajustaparaquequepadentrodelmarco*/height: 70%;
+    /*Ajustaparaquequepadentrodelmarco*/object-fit: cover;
+    border-top-left-radius: 2rem;
+    left: 2rem;
+    top: 1rem;
+}
+
+.panel-image-placeholder {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: #333;
+}
+
+.panels-title{
+    font-family: 'italiano';
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    bottom: 0rem;
+    margin: 0;
+}

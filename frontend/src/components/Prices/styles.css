@@ -1,0 +1,95 @@
+/* --- Contenedor Principal de Precios --- */
+.precios-container {
+    background-color: #ffffff; /* Fondo blanco como solicitaste */
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.precios-title {
+    font-family: 'codec-cold';
+    font-size: 2.8rem;
+    color: var(--color-purple); /* Color principal sobre fondo blanco */
+    margin: 0;
+}
+
+.precios-subtitle {
+    font-family: 'noto-sans', sans-serif;
+    font-size: 1.1rem;
+    color: #555; /* Un gris oscuro para el subtítulo */
+    margin-top: 0.5rem;
+    margin-bottom: 3.5rem;
+}
+
+/* --- Contenedor de las Columnas --- */
+.pricing-columns-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+    flex-wrap: wrap; /* Permite que se apilen en pantallas pequeñas */
+}
+
+.pricing-column {
+    flex: 1;
+    min-width: 300px; /* Ancho mínimo para cada columna */
+    background-color: #f9f9f9; /* Un fondo muy sutil para las tarjetas */
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.column-title {
+    font-family: 'SIFONN', sans-serif;
+    font-size: 1.8rem;
+    color: var(--color-purple);
+    text-align: center;
+    border-bottom: 2px solid var(--color-gold); /* Acento con tu color dorado */
+    padding-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+/* --- Lista de Precios Individuales --- */
+.price-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'noto-sans', sans-serif;
+    font-size: 1rem;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 1rem;
+}
+
+.price-item:last-child {
+    border-bottom: none; /* Quita la línea del último elemento */
+}
+
+.personas {
+    color: #333;
+}
+
+.precio {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--color-purple);
+}
+
+.precios-nota {
+    margin-top: 3rem;
+    font-family: 'noto-sans', sans-serif;
+    font-size: 0.9rem;
+    color: #777;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.5;
+}
